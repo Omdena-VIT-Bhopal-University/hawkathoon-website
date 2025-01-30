@@ -13,11 +13,11 @@ export default function Home() {
               alt="Hawkathon Logo"
               width={700}
               height={300}
-              className="mx-auto"
+              className="mx-auto "
               priority
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-8 ">
             <Image
               src="/assets/images/im1.png"
               alt="Omdena Student Chapter"

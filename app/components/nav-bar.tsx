@@ -20,25 +20,18 @@ export default function NavBar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-1">
-            <Link href="/" className="neon-text font-bangers text-2xl px-3 brutal-border">
-              HAWK
-            </Link>
-            <Link href="/" className="electric-text font-bangers text-2xl px-3 brutal-border">
-              -A-
-            </Link>
-            <Link href="/" className="cyber-text font-bangers text-2xl px-3 brutal-border">
-              THON
+            <Link
+              href="/"
+              className="neon-text font-bangers text-2xl px-3 brutal-border"
+            >
+              HawK-a-Thoon
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="nav-link"
-              >
+              <Link key={link.href} href={link.href} className="nav-link">
                 {link.label}
               </Link>
             ))}

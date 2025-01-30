@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +17,12 @@
         @apply bg-digital-white font-comic text-cyber-black;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply font-bangers;
     }
 }
@@ -38,7 +43,7 @@
 
     /* Base Brutalist Components */
     .brutal-border {
-        @apply border-4 border-cyber-black;
+        @apply border-2 border-cyber-black;
     }
 
     .brutal-card {
@@ -75,7 +80,7 @@
     /* Brutalist Buttons */
     .brutal-btn {
         @apply brutal-border bg-digital-white px-6 py-3 font-bangers shadow-brutal
-    transition-all duration-300 hover:translate-x-[-2px] hover:translate-y-[-2px] 
+    transition-all duration-300 hover:translate-x-[-2px] hover:translate-y-[-2px]
     hover:shadow-brutal-lg active:translate-x-[2px] active:translate-y-[2px];
     }
 
@@ -102,7 +107,7 @@
 
     .brutal-select {
         @apply brutal-input appearance-none pr-8
-    bg-[url('data:image/svg+xml;charset=US-ASCII,<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" fill="none" stroke="%230A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')] 
+    bg-[url('data:image/svg+xml;charset=US-ASCII,<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" fill="none" stroke="%230A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')]
     bg-no-repeat bg-right-4 bg-center;
     }
 
