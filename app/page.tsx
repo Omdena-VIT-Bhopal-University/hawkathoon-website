@@ -1,12 +1,9 @@
-import NavBar from "./components/nav-bar";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-20 px-4">
-      <NavBar />
-
+    <main className="min-h-screen pt-0 px-4">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto mt-8">
         <div className="neo-brutal-border p-8 bg-[#00ffff] mb-8 text-center">
@@ -30,10 +27,13 @@ export default function Home() {
             />
           </div>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Welcome to the most ridiculous hackathon of 2025! Where serious ideas go to die, 
-            and absurdity reigns supreme. 🎪
+            Welcome to the most ridiculous hackathon of 2025! Where serious
+            ideas go to die, and absurdity reigns supreme. 🎪
           </p>
-          <Link href="/register" className="neo-brutal-button inline-block text-xl">
+          <Link
+            href="/register"
+            className="neo-brutal-button inline-block text-xl"
+          >
             Join the Circus! 🎭
           </Link>
         </div>
@@ -42,8 +42,14 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {[
             { title: "WHERE!?", desc: "AB 224 (Yes, that's a real place)" },
-            { title: "WHEN!?", desc: "FEB 22, 2025 (Mark your calendar... or don't)" },
-            { title: "TIME!?", desc: "10:00 AM to 10:90 AM (Yes, you read that right)" },
+            {
+              title: "WHEN!?",
+              desc: "FEB 22, 2025 (Mark your calendar... or don't)",
+            },
+            {
+              title: "TIME!?",
+              desc: "10:00 AM to 10:90 AM (Yes, you read that right)",
+            },
           ].map((item, i) => (
             <div
               key={i}
@@ -57,7 +63,9 @@ export default function Home() {
 
         {/* Why Participate */}
         <div className="neo-brutal-border p-8 bg-[#ff00ff] mb-8">
-          <h2 className="text-4xl font-bold mb-6">WHY ON EARTH WOULD YOU PARTICIPATE?</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            WHY ON EARTH WOULD YOU PARTICIPATE?
+          </h2>
           <div className="space-y-4">
             {[
               "Because your normal projects are too mainstream 😎",
@@ -74,12 +82,20 @@ export default function Home() {
 
         {/* CTA Section */}
         <div className="neo-brutal-border p-8 bg-white text-center mb-8">
-          <h2 className="text-4xl font-bold mb-6">READY TO LOSE YOUR SANITY?</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            READY TO LOSE YOUR SANITY?
+          </h2>
           <div className="space-x-4">
-            <Link href="/register" className="neo-brutal-button inline-block text-xl">
+            <Link
+              href="/register"
+              className="neo-brutal-button inline-block text-xl"
+            >
               Embrace the Chaos
             </Link>
-            <Link href="/about" className="neo-brutal-button inline-block text-xl bg-white">
+            <Link
+              href="/about"
+              className="neo-brutal-button inline-block text-xl bg-white"
+            >
               Still Not Convinced?
             </Link>
           </div>

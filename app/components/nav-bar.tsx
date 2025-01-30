@@ -15,60 +15,53 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-l from-yellow-200 to-pink-200 neo-brutal-border">
+    <nav className="brutal-nav">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div>
-            <Link
-              href="/"
-              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] px-4 mx-1 py-1"
-            >
+          {/* Logo */}
+          <div className="flex items-center space-x-1">
+            <Link href="/" className="neon-text font-bangers text-2xl px-3 brutal-border">
               HAWK
             </Link>
-            <Link
-              href="/"
-              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] mx-1 px-4 py-1"
-            >
+            <Link href="/" className="electric-text font-bangers text-2xl px-3 brutal-border">
               -A-
             </Link>
-            <Link
-              href="/"
-              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] mx-1 px-4 py-1"
-            >
-              THOO N
+            <Link href="/" className="cyber-text font-bangers text-2xl px-3 brutal-border">
+              THON
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="neo-brutal-button"
+                className="nav-link"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden neo-brutal-border p-2"
+            className="md:hidden brutal-btn p-2"
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X /> : <Menu />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 space-y-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 px-4 text-lg neo-brutal-button my-2 w-full text-center"
+                className="nav-link block text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}

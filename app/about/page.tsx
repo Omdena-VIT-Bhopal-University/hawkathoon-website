@@ -1,11 +1,8 @@
-import NavBar from '../components/nav-bar';
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="min-h-screen pt-20 px-4">
-      <NavBar />
-      
+    <main className="min-h-screen pt-0 px-4">
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8">
@@ -14,10 +11,11 @@ export default function About() {
               What's This Madness About? 🎭
             </h1>
             <p className="text-lg">
-              Welcome to Hawkathoon'25, where we've thrown sanity out the window! 
-              This isn't your typical boring hackathon - it's a 24-hour festival of 
-              absurdity where we celebrate the most ridiculous, outrageous, and 
-              entertainingly useless solutions to problems that probably don't exist! 
+              Welcome to Hawkathoon'25, where we've thrown sanity out the
+              window! This isn't your typical boring hackathon - it's a 24-hour
+              festival of absurdity where we celebrate the most ridiculous,
+              outrageous, and entertainingly useless solutions to problems that
+              probably don't exist!
             </p>
           </div>
           <div className="neo-brutal-border p-4 bg-[#FFD700]">
@@ -34,7 +32,9 @@ export default function About() {
         {/* Event Details */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8">
           <div className="neo-brutal-border p-8 bg-[#ff00ff]">
-            <h2 className="text-3xl font-bold mb-6">The Not-So-Fine Print 📜</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              The Not-So-Fine Print 📜
+            </h2>
             <div className="space-y-4">
               {[
                 "24 hours of pure chaos starting Feb 22, 2025 (yes, we're planning chaos in advance)",
@@ -50,7 +50,9 @@ export default function About() {
           </div>
 
           <div className="neo-brutal-border p-8 bg-[#00ffff]">
-            <h2 className="text-3xl font-bold mb-6">Why Would Anyone Do This? 🤔</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Why Would Anyone Do This? 🤔
+            </h2>
             <div className="space-y-4">
               {[
                 "Because normal hackathons are SO 2024",
@@ -72,13 +74,14 @@ export default function About() {
             The Masterminds Behind The Madness 🎪
           </h2>
           <p className="text-lg text-center max-w-3xl mx-auto">
-            We're the Omdena Student Chapter, a bunch of supposedly serious tech enthusiasts who 
-            decided that the world needs more laughter than another todo list app. We've temporarily 
-            lost our minds and decided to organize this beautiful chaos. Join us in our mission to 
-            make technology fun again! (No refunds on sanity lost during the event)
+            We're the Omdena Student Chapter, a bunch of supposedly serious tech
+            enthusiasts who decided that the world needs more laughter than
+            another todo list app. We've temporarily lost our minds and decided
+            to organize this beautiful chaos. Join us in our mission to make
+            technology fun again! (No refunds on sanity lost during the event)
           </p>
         </div>
       </section>
     </main>
   );
-} 
+}

@@ -1,6 +1,5 @@
-import NavBar from '../components/nav-bar';
-import Link from 'next/link';
-import { Mail, Phone, User, GraduationCap } from 'lucide-react';
+import Link from "next/link";
+import { Mail, Phone, User, GraduationCap } from "lucide-react";
 
 const contacts = [
   {
@@ -11,13 +10,13 @@ const contacts = [
         icon: <Mail size={20} />,
         href: "mailto:arpitsengar2022@vitbhopal.ac.in",
         label: "Email",
-        value: "arpitsengar2022@vitbhopal.ac.in"
+        value: "arpitsengar2022@vitbhopal.ac.in",
       },
       {
         icon: <Phone size={20} />,
         href: "tel:+919311389851",
         label: "Phone",
-        value: "+91 9311389851"
+        value: "+91 9311389851",
       },
     ],
   },
@@ -29,13 +28,13 @@ const contacts = [
         icon: <Mail size={20} />,
         href: "mailto:rohitdwivedi2022@vitbhopal.ac.in",
         label: "Email",
-        value: "rohitdwivedi2022@vitbhopal.ac.in"
+        value: "rohitdwivedi2022@vitbhopal.ac.in",
       },
       {
         icon: <Phone size={20} />,
         href: "tel:+919406542241",
         label: "Phone",
-        value: "+91 9406542241"
+        value: "+91 9406542241",
       },
     ],
   },
@@ -47,13 +46,13 @@ const contacts = [
         icon: <Mail size={20} />,
         href: "mailto:mayuri.avr@vitbhopal.ac.in",
         label: "Email",
-        value: "mayuri.avr@vitbhopal.ac.in"
+        value: "mayuri.avr@vitbhopal.ac.in",
       },
       {
         icon: <GraduationCap size={20} />,
         href: "#",
         label: "Role",
-        value: "Faculty Coordinator"
+        value: "Faculty Coordinator",
       },
     ],
   },
@@ -65,19 +64,19 @@ const contacts = [
         icon: <User size={20} />,
         href: "#",
         label: "ID",
-        value: "23MIM10081"
+        value: "23MIM10081",
       },
       {
         icon: <Mail size={20} />,
         href: "mailto:siddharth.23mim10081@vitbhopal.ac.in",
         label: "Email",
-        value: "siddharth.23mim10081@vitbhopal.ac.in"
+        value: "siddharth.23mim10081@vitbhopal.ac.in",
       },
       {
         icon: <Phone size={20} />,
         href: "tel:+917524864876",
         label: "Phone",
-        value: "+91 7524864876"
+        value: "+91 7524864876",
       },
     ],
   },
@@ -89,19 +88,19 @@ const contacts = [
         icon: <User size={20} />,
         href: "#",
         label: "ID",
-        value: "23BAI10611"
+        value: "23BAI10611",
       },
       {
         icon: <Mail size={20} />,
         href: "mailto:alok.23bai10611@vitbhopal.ac.in",
         label: "Email",
-        value: "alok.23bai10611@vitbhopal.ac.in"
+        value: "alok.23bai10611@vitbhopal.ac.in",
       },
       {
         icon: <Phone size={20} />,
         href: "tel:+917011457328",
         label: "Phone",
-        value: "+91 7011457328"
+        value: "+91 7011457328",
       },
     ],
   },
@@ -109,9 +108,7 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <main className="min-h-screen pt-20 px-4">
-      <NavBar />
-      
+    <main className="min-h-screen pt-0 px-4">
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
         <div className="neo-brutal-border p-8 bg-[#00ffff] mb-8 text-center">
@@ -137,7 +134,12 @@ export default function Contact() {
                   <Link
                     key={j}
                     href={social.href}
-                    target={social.href.startsWith("mailto") || social.href.startsWith("tel") ? "_self" : "_blank"}
+                    target={
+                      social.href.startsWith("mailto") ||
+                      social.href.startsWith("tel")
+                        ? "_self"
+                        : "_blank"
+                    }
                     className="neo-brutal-border bg-white px-4 py-2 flex items-center space-x-3 hover:translate-x-[2px] hover:translate-y-[2px] transition-transform"
                   >
                     <span className="text-black">{social.icon}</span>
@@ -167,4 +169,4 @@ export default function Contact() {
       </section>
     </main>
   );
-} 
+}

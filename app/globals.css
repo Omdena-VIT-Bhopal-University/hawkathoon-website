@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,11 +7,18 @@
     --neon-pink: #ff00ff;
     --cyber-yellow: #00f070;
     --electric-blue: #00ffff;
+    --dot-color: rgba(255, 0, 255, 0.3);
+    --grid-color: rgba(0, 255, 255, 0.2);
+    --line-color: rgba(57, 255, 20, 0.2);
 }
 
 @layer base {
     body {
-        @apply bg-gradient-to-l from-yellow-200 to-pink-200 font-mono;
+        @apply bg-digital-white font-comic text-cyber-black;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bangers;
     }
 }
 
@@ -26,5 +34,123 @@
     .neo-brutal-button {
         @apply neo-brutal-border neo-brutal-shadow px-6 py-2 bg-[#FFD700]
     hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all;
+    }
+
+    /* Base Brutalist Components */
+    .brutal-border {
+        @apply border-4 border-cyber-black;
+    }
+
+    .brutal-card {
+        @apply brutal-border bg-digital-white shadow-brutal transition-all duration-300
+    hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal-xl;
+    }
+
+    /* Background Patterns */
+    .dot-bg {
+        @apply bg-dot-pattern bg-dots-md;
+    }
+
+    .grid-bg {
+        @apply bg-grid-pattern bg-grid-md;
+    }
+
+    .diagonal-bg {
+        @apply bg-diagonal-lines;
+    }
+
+    /* Neon Text Effects */
+    .neon-text {
+        @apply text-neon-pink shadow-neon-glow animate-pulse-glow;
+    }
+
+    .electric-text {
+        @apply text-electric-blue shadow-electric-glow animate-pulse-glow;
+    }
+
+    .cyber-text {
+        @apply text-cool-green shadow-green-glow animate-pulse-glow;
+    }
+
+    /* Brutalist Buttons */
+    .brutal-btn {
+        @apply brutal-border bg-digital-white px-6 py-3 font-bangers shadow-brutal
+    transition-all duration-300 hover:translate-x-[-2px] hover:translate-y-[-2px] 
+    hover:shadow-brutal-lg active:translate-x-[2px] active:translate-y-[2px];
+    }
+
+    .neon-btn {
+        @apply brutal-btn bg-neon-pink text-digital-white shadow-neon-glow
+    hover:shadow-brutal-xl hover:shadow-neon-glow;
+    }
+
+    .electric-btn {
+        @apply brutal-btn bg-electric-blue text-cyber-black shadow-electric-glow
+    hover:shadow-brutal-xl hover:shadow-electric-glow;
+    }
+
+    .cyber-btn {
+        @apply brutal-btn bg-cool-green text-cyber-black shadow-green-glow
+    hover:shadow-brutal-xl hover:shadow-green-glow;
+    }
+
+    /* Form Elements */
+    .brutal-input {
+        @apply brutal-border bg-digital-white px-4 py-2 shadow-brutal-inner
+    focus:outline-none focus:shadow-brutal focus:translate-x-[-2px] focus:translate-y-[-2px];
+    }
+
+    .brutal-select {
+        @apply brutal-input appearance-none pr-8
+    bg-[url('data:image/svg+xml;charset=US-ASCII,<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M2 4l4 4 4-4" fill="none" stroke="%230A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')] 
+    bg-no-repeat bg-right-4 bg-center;
+    }
+
+    /* Layout Components */
+    .brutal-container {
+        @apply brutal-border bg-digital-white p-6 shadow-brutal relative overflow-hidden;
+    }
+
+    .brutal-container::before {
+        @apply content-[''] absolute inset-0 dot-bg opacity-10 pointer-events-none;
+    }
+
+    .brutal-grid {
+        @apply grid gap-6;
+    }
+
+    /* Navigation */
+    .brutal-nav {
+        @apply brutal-border bg-digital-white shadow-brutal sticky top-0 z-50;
+    }
+
+    .nav-link {
+        @apply brutal-btn text-lg hover:animate-shake;
+    }
+
+    .nav-link-active {
+        @apply bg-neon-pink text-digital-white shadow-neon-glow;
+    }
+
+    /* Interactive Elements */
+    .brutal-hover {
+        @apply transition-transform duration-300 hover:scale-105;
+    }
+
+    .brutal-active {
+        @apply active:translate-x-[2px] active:translate-y-[2px] active:shadow-brutal-sm;
+    }
+
+    .float-animation {
+        @apply animate-float;
+    }
+
+    /* Dividers and Accents */
+    .brutal-divider {
+        @apply brutal-border my-6;
+    }
+
+    .brutal-badge {
+        @apply brutal-border px-3 py-1 text-sm font-bold shadow-brutal-sm;
     }
 }
