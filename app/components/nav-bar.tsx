@@ -1,29 +1,43 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/register', label: 'Register' },
-  { href: '/contact', label: 'Contact' },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/register", label: "Register" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white neo-brutal-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-l from-yellow-200 to-pink-200 neo-brutal-border">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link 
-            href="/" 
-            className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] px-4 py-1"
-          >
-            HACKATHON
-          </Link>
+          <div>
+            <Link
+              href="/"
+              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] px-4 mx-1 py-1"
+            >
+              HAWK
+            </Link>
+            <Link
+              href="/"
+              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] mx-1 px-4 py-1"
+            >
+              -A-
+            </Link>
+            <Link
+              href="/"
+              className="text-2xl font-bold neo-brutal-border bg-[#ff00ff] mx-1 px-4 py-1"
+            >
+              THOO N
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-4">

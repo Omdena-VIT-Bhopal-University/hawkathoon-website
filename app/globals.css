@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --neon-pink: #ff00ff;
-  --cyber-yellow: #FFD700;
-  --electric-blue: #00ffff;
+    --neon-pink: #ff00ff;
+    --cyber-yellow: #00f070;
+    --electric-blue: #00ffff;
 }
 
 @layer base {
-  body {
-    @apply bg-white font-mono;
-  }
+    body {
+        @apply bg-gradient-to-l from-yellow-200 to-pink-200 font-mono;
+    }
 }
 
 @layer components {
-  .neo-brutal-shadow {
-    @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
-  }
-  
-  .neo-brutal-border {
-    @apply border-2 border-black;
-  }
+    .neo-brutal-shadow {
+        @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+    }
 
-  .neo-brutal-button {
-    @apply neo-brutal-border neo-brutal-shadow px-6 py-2 bg-[#FFD700] 
+    .neo-brutal-border {
+        @apply border-2 border-black;
+    }
+
+    .neo-brutal-button {
+        @apply neo-brutal-border neo-brutal-shadow px-6 py-2 bg-[#FFD700]
     hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all;
-  }
+    }
 }
