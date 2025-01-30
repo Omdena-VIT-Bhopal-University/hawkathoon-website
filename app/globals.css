@@ -3,19 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --neon-pink: #ff00ff;
+  --cyber-yellow: #FFD700;
+  --electric-blue: #00ffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-white font-mono;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .neo-brutal-shadow {
+    @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+  }
+  
+  .neo-brutal-border {
+    @apply border-2 border-black;
+  }
+
+  .neo-brutal-button {
+    @apply neo-brutal-border neo-brutal-shadow px-6 py-2 bg-[#FFD700] 
+    hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all;
+  }
 }
