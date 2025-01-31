@@ -48,12 +48,12 @@ const contacts = [
         label: "Email",
         value: "mayuri.avr@vitbhopal.ac.in",
       },
-      // {
-      //   icon: <GraduationCap size={20} />,
-      //   href: "#",
-      //   label: "Role",
-      //   value: "Faculty Coordinator",
-      // },
+      {
+        icon: <GraduationCap size={20} />,
+        href: "#",
+        label: "Role",
+        value: "Faculty Coordinator",
+      },
     ],
   },
   {
