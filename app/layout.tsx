@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Background Patterns */}
-        <div className="fixed inset-0 dot-bg opacity-30 pointer-events-none" />
-        <div className="fixed inset-0 grid-bg opacity-20 pointer-events-none" />
-        <div className="fixed inset-0 diagonal-bg opacity-10 pointer-events-none" />
+        {/* Comic Book Background Texture */}
+        <div className="fixed inset-0 comic-dots opacity-30 pointer-events-none" />
+        <div className="fixed inset-0 comic-lines opacity-20 pointer-events-none" />
+        <div className="fixed inset-0 comic-crosshatch opacity-10 pointer-events-none" />
         <NavBar />
         {/* Main Content */}
         <div className="relative min-h-screen">

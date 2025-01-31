@@ -3,36 +3,37 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-0 px-4">
+    <main className="min-h-screen pt-0 px-4 comic-dots bg-yellow-200">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto mt-8">
-        <div className="neo-brutal-border p-8 bg-[#00ffff] mb-8 text-center">
-          <div className="mb-8">
+        <div className="neo-brutal-card p-8 bg-cyan-300 mb-8 text-center relative overflow-hidden">
+          <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+          <div className="mb-8 relative z-10">
             <Image
               src="/assets/images/logo.png"
               alt="Hawkathon Logo"
               width={700}
               height={300}
-              className="mx-auto "
+              className="mx-auto transform rotate-2"
               priority
             />
           </div>
-          <div className="mb-8 ">
+          <div className="mb-8 relative z-10">
             <Image
               src="/assets/images/im1.png"
               alt="Omdena Student Chapter"
               width={200}
               height={50}
-              className="mx-auto"
+              className="mx-auto transform -rotate-3"
             />
           </div>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Welcome to the most ridiculous hackathon of 2025! Where serious
-            ideas go to die, and absurdity reigns supreme. 🎪
+          <p className="comic-text text-3xl mb-8 max-w-2xl mx-auto text-white">
+            Welcome to the most RIDICULOUS hackathon of 2025! Where serious
+            ideas go to DIE, and ABSURDITY reigns supreme! 🎪
           </p>
           <Link
             href="/register"
-            className="neo-brutal-button inline-block text-xl"
+            className="neo-brutal-button inline-block text-2xl transform rotate-3"
           >
             Join the Circus! 🎭
           </Link>
@@ -53,17 +54,18 @@ export default function Home() {
           ].map((item, i) => (
             <div
               key={i}
-              className="neo-brutal-border neo-brutal-shadow p-6 bg-[#FFD700] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all"
+              className="neo-brutal-card p-6 bg-pink-400 hover:bg-pink-500 transition-colors duration-300"
             >
-              <h3 className="text-4xl font-bold mb-2">{item.title}</h3>
-              <p className="text-xl">{item.desc}</p>
+              <h3 className="comic-text mb-2">{item.title}</h3>
+              <p className="text-xl font-comic">{item.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Why Participate */}
-        <div className="neo-brutal-border p-8 bg-[#ff00ff] mb-8">
-          <h2 className="text-4xl font-bold mb-6">
+        <div className="neo-brutal-card p-8 bg-green-400 mb-8 relative overflow-hidden">
+          <div className="comic-lines absolute inset-0 opacity-20"></div>
+          <h2 className="comic-text mb-6 text-white">
             WHY ON EARTH WOULD YOU PARTICIPATE?
           </h2>
           <div className="space-y-4">
@@ -73,28 +75,32 @@ export default function Home() {
               "Win prizes for being absolutely ridiculous (yes, really!) 🏆",
               "Create something so absurd it might just work (or not, who cares?) 🤪",
             ].map((item, i) => (
-              <div key={i} className="neo-brutal-border bg-white px-4 py-2">
-                {item}
+              <div
+                key={i}
+                className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+              >
+                <p className="font-comic text-lg">{item}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="neo-brutal-border p-8 bg-white text-center mb-8">
-          <h2 className="text-4xl font-bold mb-6">
+        <div className="neo-brutal-card p-8 bg-purple-400 text-center mb-8 relative overflow-hidden">
+          <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+          <h2 className="comic-text mb-6 text-white">
             READY TO LOSE YOUR SANITY?
           </h2>
           <div className="space-x-4">
             <Link
               href="/register"
-              className="neo-brutal-button inline-block text-xl"
+              className="neo-brutal-button inline-block text-2xl bg-yellow-400 transform -rotate-2"
             >
               Embrace the Chaos
             </Link>
             <Link
               href="/about"
-              className="neo-brutal-button inline-block text-xl bg-white"
+              className="neo-brutal-button inline-block text-2xl bg-cyan-300 transform rotate-2"
             >
               Still Not Convinced?
             </Link>

@@ -158,4 +158,50 @@
     .brutal-badge {
         @apply brutal-border px-3 py-1 text-sm font-bold shadow-brutal-sm;
     }
+
+    /* Comic Book Textures */
+    .comic-dots {
+        background-image: radial-gradient(circle, #000 1px, transparent 1px);
+        background-size: 10px 10px;
+    }
+
+    .comic-lines {
+        background-image: repeating-linear-gradient(
+            to right,
+            #000,
+            #000 1px,
+            transparent 1px,
+            transparent 10px
+        );
+    }
+
+    .comic-crosshatch {
+        background-image: linear-gradient(to right, #000 1px, transparent 1px),
+            linear-gradient(to bottom, #000 1px, transparent 1px);
+        background-size: 10px 10px;
+    }
+
+    /* Neo-Brutalist Components */
+    .neo-brutal-card {
+        @apply bg-white border-4 border-black shadow-[8px_8px_0_0_#000]
+           transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]
+           hover:shadow-[12px_12px_0_0_#000];
+    }
+
+    .neo-brutal-button {
+        @apply bg-yellow-400 text-black font-bold py-2 px-4 border-4 border-black
+           shadow-[4px_4px_0_0_#000] transition-all duration-300
+           hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_0_#000]
+           active:translate-x-[2px] active:translate-y-[2px] active:shadow-none;
+    }
+
+    /* Comic Book Text */
+    .comic-text {
+        @apply font-bangers text-4xl leading-tight;
+        text-shadow:
+            1px 2px 0 #5c4033,
+            -1px -2px 0 #5c4033,
+            1px -2px 0 #5c4033,
+            -1px 2px 0 #000;
+    }
 }
