@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import NavBar from "./components/nav-bar";
 
 export const metadata: Metadata = {
-  title: "Omdena Hawk-A-Thon",
-  description: "A funky neo-brutalist website for the Omdena Hawk-A-Thon event",
-  keywords: ["Omdena", "Hackathon", "AI", "Machine Learning", "Neo Brutalism"],
+  title: "Omdena Hawk-a-Thoon'25",
+  description: "Omdena Local Chapter event website",
+  icons: {
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
