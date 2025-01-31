@@ -13,7 +13,7 @@ export default function About() {
             </h1>
             <p className="text-lg font-comic">
               Welcome to Hawkathoon'25, where we've thrown sanity out the
-              window! This isn't your typical boring hackathon - it's a 24-hour
+              window! This isn't your typical boring hackathon - it's a 1.5-hour
               festival of absurdity where we celebrate the most ridiculous,
               outrageous, and entertainingly useless solutions to problems that
               probably don't exist!
@@ -39,7 +39,7 @@ export default function About() {
             </h2>
             <div className="space-y-4">
               {[
-                "24 hours of pure chaos starting Feb 22, 2025 (yes, we're planning chaos in advance)",
+                "1.5 hours of pure chaos starting Feb 22, 2025 (yes, we're planning chaos in advance)",
                 "Open to all college students (the more chaotic minds, the merrier!)",
                 "Prizes for the most absurd, yet somehow functional creations",
                 "Warning: Side effects may include uncontrollable laughter and questioning reality",
