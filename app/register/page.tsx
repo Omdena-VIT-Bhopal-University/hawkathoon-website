@@ -9,7 +9,7 @@ const registrationLinks = [
   {
     href: "https://forms.gle/jvTTsyrwFgxRahHm9",
     label: "Join the circus from afar",
-    handle: "External Students (Fellow Weirdos)",
+    handle: "Non VIT homies (Fellow Weirdos)",
   },
   {
     href: "mailto:omdenachapter@vit.ac.in",
