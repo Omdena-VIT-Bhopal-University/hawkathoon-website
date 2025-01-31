@@ -204,4 +204,7 @@
             0.5px -2px 0 #5c4033,
             -0.5px 2px 0 #000;
     }
+    .comic-text-2 {
+        @apply font-bangers text-4xl leading-tight;
+    }
 }

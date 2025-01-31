@@ -39,27 +39,15 @@ const contacts = [
     ],
   },
   {
-    name: "Dr. Mayuri AVR",
-    role: "Faculty Coordinator",
-    socials: [
-      {
-        icon: <Mail size={20} />,
-        href: "mailto:mayuri.avr@vitbhopal.ac.in",
-        label: "Email",
-        value: "mayuri.avr@vitbhopal.ac.in",
-      },
-    ],
-  },
-  {
     name: "Siddharth Nagaych",
     role: "Team Member",
     socials: [
-      {
-        icon: <User size={20} />,
-        href: "#",
-        label: "ID",
-        value: "23MIM10081",
-      },
+      // {
+      //   icon: <User size={20} />,
+      //   href: "#",
+      //   label: "ID",
+      //   value: "23MIM10081",
+      // },
       {
         icon: <Mail size={20} />,
         href: "mailto:siddharth.23mim10081@vitbhopal.ac.in",
@@ -78,12 +66,12 @@ const contacts = [
     name: "Alok Kumar Yadav",
     role: "Team Member",
     socials: [
-      {
-        icon: <User size={20} />,
-        href: "#",
-        label: "ID",
-        value: "23BAI10611",
-      },
+      // {
+      //   icon: <User size={20} />,
+      //   href: "#",
+      //   label: "ID",
+      //   value: "23BAI10611",
+      // },
       {
         icon: <Mail size={20} />,
         href: "mailto:alok.23bai10611@vitbhopal.ac.in",
@@ -98,6 +86,18 @@ const contacts = [
       },
     ],
   },
+  {
+    name: "Dr. Mayuri AVR",
+    role: "Faculty Coordinator",
+    socials: [
+      {
+        icon: <Mail size={20} />,
+        href: "mailto:mayuri.avr@vitbhopal.ac.in",
+        label: "Email",
+        value: "mayuri.avr@vitbhopal.ac.in",
+      },
+    ],
+  }
 ];
 
 export default function Contact() {
@@ -109,7 +109,7 @@ export default function Contact() {
           <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
           <h1 className="comic-text text-5xl mb-6 text-white">Contact Us</h1>
           <p className="text-xl font-comic">
-            Reach out to our team members for any queries (or just to say hi)!
+            {/* Reach out to the event organizers for any queries (or just to say hi)! */}
           </p>
         </div>
 
@@ -118,11 +118,11 @@ export default function Contact() {
           {contacts.map((contact, i) => (
             <div
               key={i}
-              className="neo-brutal-card p-8 bg-pink-400 hover:bg-pink-500 transition-colors duration-300 transform hover:rotate-1"
+              className="neo-brutal-card p-8 bg-pink-400 hover:bg-pink-500 transition-colors duration-300 transform"
             >
               <div className="mb-6">
-                <h3 className="comic-text text-3xl mb-2">{contact.name}</h3>
-                <p className="text-lg font-comic">{contact.role}</p>
+                <h3 className="comic-text-2 text-4xl mb-2">{contact.name}</h3>
+                <p className="comic-text-2 text-xl text-[#00000095]">{contact.role}</p>
               </div>
               <div className="space-y-4">
                 {contact.socials.map((social, j) => (
@@ -148,27 +148,6 @@ export default function Contact() {
           ))}
         </div>
 
-        {/* Important Dates */}
-        <div className="neo-brutal-card p-8 bg-green-400 mt-8 text-center relative overflow-hidden">
-          <div className="comic-lines absolute inset-0 opacity-20"></div>
-          <h2 className="comic-text text-4xl mb-6 text-white">
-            Important Dates
-          </h2>
-          <div className="space-y-4">
-            {[
-              "Registration Opens: Right now!",
-              "Registration Closes: Soon",
-              "Event Date: February 22nd, 2025",
-            ].map((date, i) => (
-              <div
-                key={i}
-                className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
-              >
-                <p className="font-comic text-lg">{date}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
     </main>
   );

@@ -36,7 +36,7 @@ export default function NavBar() {
               <Link
                 key={i}
                 href={link.href}
-                className="neo-brutal-button bg-white hover:bg-pink-200 transition-colors duration-300 transform rotate-1 hover:rotate-0"
+                className="neo-brutal-button bg-white hover:bg-pink-200 transition-colors duration-300 transform -rotate-1"
               >
                 {link.label}
               </Link>
@@ -60,7 +60,7 @@ export default function NavBar() {
               <Link
                 key={i}
                 href={link.href}
-                className="neo-brutal-button bg-white hover:bg-pink-200 transition-colors duration-300 block text-center transform rotate-1 hover:rotate-0"
+                className="neo-brutal-button bg-white hover:bg-pink-200 transition-colors duration-300 block text-center transform"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}

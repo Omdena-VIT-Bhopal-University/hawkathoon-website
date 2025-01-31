@@ -23,23 +23,29 @@ const data: ProjectData[] = [
     link: "https://github.com/arpy8/Are_you_Schizophrenic",
     image: "/assets/images/fight-club.jpg",
   },
-  {
-    title: "BSOD",
-    desc: "A python package to simulate BSOD",
-    link: "https://github.com/arpy8/bsod",
-    image: "/assets/images/bsod.png",
-  },
+  // {
+  //   title: "BSOD",
+  //   desc: "A python package to simulate BSOD",
+  //   link: "https://github.com/arpy8/bsod",
+  //   image: "/assets/images/bsod.png",
+  // },
   {
     title: "Bhandaro ki Soochna",
     desc: "Mobile app to assist users in locating nearest bhandara.",
     link: "https://github.com/arpy8/Are_you_Schizophrenic",
-    image: "/assets/images/fight-club.jpg",
+    image: "/assets/images/me-when-bhandara.jpg",
   },
+  {
+    title: "Gaydar",
+    desc: "A research project done by stanford scholars to detect gay people.",
+    link: "https://psycnet.apa.org/record/2018-03783-002",
+    image: "/assets/images/gaydar.png",
+  }
 ];
 
 function ProjectCard({ title, desc, link, image }: ProjectCardProps) {
   return (
-    <div className="neo-brutal-card p-4 bg-white hover:bg-yellow-100 transition-colors duration-300 transform rotate-1 hover:rotate-0">
+    <div className="neo-brutal-card p-4 bg-white hover:bg-yellow-100 transition-colors duration-300 transform -rotate-1">
       <Image
         src={image || "/placeholder.svg"}
         alt={title}
@@ -47,7 +53,7 @@ function ProjectCard({ title, desc, link, image }: ProjectCardProps) {
         height={200}
         className="w-full h-48 object-cover mb-4 neo-brutal-border"
       />
-      <h3 className="comic-text text-2xl mb-2">{title}</h3>
+      <h3 className="comic-text-2 text-2xl mb-2">{title}</h3>
       <p className="font-comic text-lg mb-4">{desc}</p>
       {link && (
         <Link
@@ -73,7 +79,7 @@ export default function ExamplePage() {
             Example Projects
           </h1>
           <p className="text-xl font-comic">
-            Check out these mind-bending creations from past Hawkathoons!
+            Check these out to get an idea of what we're expecting!
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
