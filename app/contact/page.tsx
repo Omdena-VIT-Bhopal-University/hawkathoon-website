@@ -156,7 +156,7 @@ export default function Contact() {
           </h2>
           <div className="space-y-4">
             {[
-              "Registration Opens: Right now!, 2025",
+              "Registration Opens: Right now!",
               "Registration Closes: Soon",
               "Event Date: February 22nd, 2025",
             ].map((date, i) => (
