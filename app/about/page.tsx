@@ -61,7 +61,7 @@ export default function About() {
             </h2>
             <div className="space-y-4">
               {[
-                "Because normal hackathons are SO 2024",
+                "Because normal hackathons are SO 2024  💅",
                 "To prove that your weirdest ideas deserve a spotlight",
                 "Free pizza (okay, this one's not actually serious at all)",
                 "Create something so bizarre it might just revolutionize... absolutely nothing",
