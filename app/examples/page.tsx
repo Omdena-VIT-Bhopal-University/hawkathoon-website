@@ -1,7 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+// First, define an interface for the project data
+interface ProjectData {
+  title: string;
+  desc: string;
+  link: string;
+  image: string;
+}
 
-const data = [
+// Define the props interface for the ProjectCard component
+interface ProjectCardProps {
+  title: string;
+  desc: string;
+  link: string;
+  image: string;
+}
+
+const data: ProjectData[] = [
   {
     title: "Schizophrenia Detector",
     desc: "A simple app to detect Schizophrenia",
@@ -17,12 +32,12 @@ const data = [
   {
     title: "Bhandaro ki Soochna",
     desc: "Mobile app to assist users in locating nearest bhandara.",
-    link: "",
+    link: "https://github.com/arpy8/Are_you_Schizophrenic",
     image: "/assets/images/fight-club.jpg",
   },
 ];
 
-function ProjectCard({ title, desc, link, image }) {
+function ProjectCard({ title, desc, link, image }: ProjectCardProps) {
   return (
     <div className="neo-brutal-card p-4 bg-white hover:bg-yellow-100 transition-colors duration-300 transform rotate-1 hover:rotate-0">
       <Image
