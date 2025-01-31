@@ -30,8 +30,8 @@ export default function NavBar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="nav-link">
+            {navLinks.map((link, i) => (
+              <Link key={i} href={link.href} className="nav-link">
                 {link.label}
               </Link>
             ))}
@@ -50,9 +50,9 @@ export default function NavBar() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
-            {navLinks.map((link) => (
+            {navLinks.map((link, i) => (
               <Link
-                key={link.href}
+                key={i}
                 href={link.href}
                 className="nav-link block text-center"
                 onClick={() => setIsMenuOpen(false)}
