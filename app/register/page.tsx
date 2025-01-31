@@ -20,12 +20,15 @@ const registrationLinks = [
 
 export default function Register() {
   return (
-    <main className="min-h-screen pt-0 px-4">
+    <main className="min-h-screen pt-0 px-4 comic-dots bg-yellow-200">
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
-        <div className="neo-brutal-border p-8 bg-[#00ffff] mb-8 text-center">
-          <h1 className="text-4xl font-bold mb-6">Sign Your Sanity Away! 🎭</h1>
-          <p className="text-xl mb-4">
+        <div className="neo-brutal-card p-8 bg-cyan-300 mb-8 text-center relative overflow-hidden">
+          <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+          <h1 className="comic-text text-5xl mb-6 text-white">
+            Sign Your Sanity Away! 🎭
+          </h1>
+          <p className="text-xl mb-4 font-comic">
             Warning: By registering for Hawkathoon'25, you agree to temporarily
             abandon all logic and embrace the absurd. Side effects may include
             uncontrollable creativity and spontaneous innovation!
@@ -39,34 +42,34 @@ export default function Register() {
               key={i}
               href={link.href}
               target="_blank"
-              className="neo-brutal-border neo-brutal-shadow p-8 bg-[#FFD700] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all text-center"
+              className="neo-brutal-card p-8 bg-pink-400 hover:bg-pink-500 transition-colors duration-300 text-center transform hover:rotate-1"
             >
-              <h3 className="text-2xl font-bold mb-4">{link.handle}</h3>
-              <p className="text-lg">{link.label}</p>
+              <h3 className="comic-text text-2xl mb-4">{link.handle}</h3>
+              <p className="text-lg font-comic">{link.label}</p>
             </Link>
           ))}
         </div>
 
         {/* Additional Info */}
-        <div className="neo-brutal-border p-8 bg-[#ff00ff] mt-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">
+        <div className="neo-brutal-card p-8 bg-green-400 mt-8 text-center relative overflow-hidden">
+          <div className="comic-lines absolute inset-0 opacity-20"></div>
+          <h2 className="comic-text text-4xl mb-6 text-white">
             ⚠️ Somewhat Important Information ⚠️
           </h2>
           <div className="space-y-4">
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              Last Day to Join the Madness: Feb 20th, 2025 (or when pigs fly,
-              whichever comes first)
-            </div>
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              D-Day: Feb 22nd, 2025 (mark your calendar with a crayon)
-            </div>
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              Who Can Join: Any college student brave enough to question reality
-            </div>
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              What to Bring: Your laptop, your weirdest ideas, and your sense of
-              humor (required)
-            </div>
+            {[
+              "Last Day to Join the Madness: Feb 20th, 2025 (or when pigs fly, whichever comes first)",
+              "D-Day: Feb 22nd, 2025 (mark your calendar with a crayon)",
+              "Who Can Join: Any college student brave enough to question reality",
+              "What to Bring: Your laptop, your weirdest ideas, and your sense of humor (required)",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+              >
+                <p className="font-comic text-lg">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

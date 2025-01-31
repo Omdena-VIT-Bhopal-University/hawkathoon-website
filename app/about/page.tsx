@@ -2,15 +2,16 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="min-h-screen pt-0 px-4">
+    <main className="min-h-screen pt-0 px-4 comic-dots bg-yellow-200">
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8">
-          <div className="neo-brutal-border p-8 bg-[#00ffff]">
-            <h1 className="text-4xl font-bold mb-6">
+          <div className="neo-brutal-card p-8 bg-cyan-300 relative overflow-hidden">
+            <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+            <h1 className="comic-text text-5xl mb-6 text-white">
               What's This Madness About? 🎭
             </h1>
-            <p className="text-lg">
+            <p className="text-lg font-comic">
               Welcome to Hawkathoon'25, where we've thrown sanity out the
               window! This isn't your typical boring hackathon - it's a 24-hour
               festival of absurdity where we celebrate the most ridiculous,
@@ -18,7 +19,7 @@ export default function About() {
               probably don't exist!
             </p>
           </div>
-          <div className="neo-brutal-border p-4 bg-[#FFD700]">
+          <div className="neo-brutal-card p-4 bg-pink-400 transform -rotate-2">
             <Image
               src="/assets/images/poster.png"
               alt="Hawkathoon Poster"
@@ -31,8 +32,9 @@ export default function About() {
 
         {/* Event Details */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8">
-          <div className="neo-brutal-border p-8 bg-[#ff00ff]">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="neo-brutal-card p-8 bg-purple-400 relative overflow-hidden">
+            <div className="comic-lines absolute inset-0 opacity-20"></div>
+            <h2 className="comic-text text-4xl mb-6 text-white">
               The Not-So-Fine Print 📜
             </h2>
             <div className="space-y-4">
@@ -42,15 +44,19 @@ export default function About() {
                 "Prizes for the most absurd, yet somehow functional creations",
                 "Warning: Side effects may include uncontrollable laughter and questioning reality",
               ].map((detail, i) => (
-                <div key={i} className="neo-brutal-border bg-white px-4 py-2">
-                  {detail}
+                <div
+                  key={i}
+                  className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+                >
+                  <p className="font-comic text-lg">{detail}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="neo-brutal-border p-8 bg-[#00ffff]">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="neo-brutal-card p-8 bg-green-400 relative overflow-hidden">
+            <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+            <h2 className="comic-text text-4xl mb-6 text-white">
               Why Would Anyone Do This? 🤔
             </h2>
             <div className="space-y-4">
@@ -60,8 +66,11 @@ export default function About() {
                 "Free pizza (okay, this one's actually serious)",
                 "Create something so bizarre it might just revolutionize... absolutely nothing",
               ].map((reason, i) => (
-                <div key={i} className="neo-brutal-border bg-white px-4 py-2">
-                  {reason}
+                <div
+                  key={i}
+                  className="neo-brutal-card bg-white px-4 py-2 transform -rotate-1"
+                >
+                  <p className="font-comic text-lg">{reason}</p>
                 </div>
               ))}
             </div>
@@ -69,11 +78,12 @@ export default function About() {
         </div>
 
         {/* About Organizers */}
-        <div className="neo-brutal-border p-8 bg-white mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">
+        <div className="neo-brutal-card p-8 bg-yellow-400 mb-8 relative overflow-hidden">
+          <div className="comic-dots absolute inset-0 opacity-20"></div>
+          <h2 className="comic-text text-5xl mb-6 text-center text-white">
             The Masterminds Behind The Madness 🎪
           </h2>
-          <p className="text-lg text-center max-w-3xl mx-auto">
+          <p className="text-xl text-center max-w-3xl mx-auto font-comic">
             We're the Omdena Student Chapter, a bunch of supposedly serious tech
             enthusiasts who decided that the world needs more laughter than
             another todo list app. We've temporarily lost our minds and decided

@@ -199,9 +199,9 @@
     .comic-text {
         @apply font-bangers text-4xl leading-tight;
         text-shadow:
-            1px 2px 0 #5c4033,
-            -1px -2px 0 #5c4033,
-            1px -2px 0 #5c4033,
-            -1px 2px 0 #000;
+            0.5px 2px 0 #5c4033,
+            -0.5px -2px 0 #5c4033,
+            0.5px -2px 0 #5c4033,
+            -0.5px 2px 0 #000;
     }
 }

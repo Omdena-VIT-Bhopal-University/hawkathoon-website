@@ -108,13 +108,14 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <main className="min-h-screen pt-0 px-4">
+    <main className="min-h-screen pt-0 px-4 comic-dots bg-yellow-200">
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
-        <div className="neo-brutal-border p-8 bg-[#00ffff] mb-8 text-center">
-          <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl">
-            Reach out to our team members for any queries.
+        <div className="neo-brutal-card p-8 bg-cyan-300 mb-8 text-center relative overflow-hidden">
+          <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
+          <h1 className="comic-text text-5xl mb-6 text-white">Contact Us</h1>
+          <p className="text-xl font-comic">
+            Reach out to our team members for any queries (or just to say hi)!
           </p>
         </div>
 
@@ -123,11 +124,11 @@ export default function Contact() {
           {contacts.map((contact, i) => (
             <div
               key={i}
-              className="neo-brutal-border neo-brutal-shadow p-8 bg-[#FFD700] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all"
+              className="neo-brutal-card p-8 bg-pink-400 hover:bg-pink-500 transition-colors duration-300 transform hover:rotate-1"
             >
               <div className="mb-6">
-                <h3 className="text-2xl font-bold mb-2">{contact.name}</h3>
-                <p className="text-lg">{contact.role}</p>
+                <h3 className="comic-text text-3xl mb-2">{contact.name}</h3>
+                <p className="text-lg font-comic">{contact.role}</p>
               </div>
               <div className="space-y-4">
                 {contact.socials.map((social, j) => (
@@ -140,10 +141,12 @@ export default function Contact() {
                         ? "_self"
                         : "_blank"
                     }
-                    className="neo-brutal-border bg-white px-4 py-2 flex items-center space-x-3 hover:translate-x-[2px] hover:translate-y-[2px] transition-transform"
+                    className="neo-brutal-card bg-white px-4 py-2 flex items-center space-x-3 hover:translate-x-[2px] hover:translate-y-[2px] transition-transform"
                   >
                     <span className="text-black">{social.icon}</span>
-                    <span className="text-sm truncate">{social.value}</span>
+                    <span className="text-sm truncate font-comic">
+                      {social.value}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -152,18 +155,24 @@ export default function Contact() {
         </div>
 
         {/* Important Dates */}
-        <div className="neo-brutal-border p-8 bg-[#ff00ff] mt-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Important Dates</h2>
+        <div className="neo-brutal-card p-8 bg-green-400 mt-8 text-center relative overflow-hidden">
+          <div className="comic-lines absolute inset-0 opacity-20"></div>
+          <h2 className="comic-text text-4xl mb-6 text-white">
+            Important Dates
+          </h2>
           <div className="space-y-4">
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              Registration Opens: March 1st, 2025
-            </div>
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              Registration Closes: March 25th, 2025
-            </div>
-            <div className="neo-brutal-border bg-white px-4 py-2">
-              Event Date: March 30th, 2025
-            </div>
+            {[
+              "Registration Opens: March 1st, 2025",
+              "Registration Closes: March 25th, 2025",
+              "Event Date: March 30th, 2025",
+            ].map((date, i) => (
+              <div
+                key={i}
+                className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+              >
+                <p className="font-comic text-lg">{date}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
