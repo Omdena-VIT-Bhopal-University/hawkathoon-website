@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, User, GraduationCap } from "lucide-react";
+import { Mail, Phone, User } from "lucide-react";
 
 const contacts = [
   {
@@ -47,12 +47,6 @@ const contacts = [
         href: "mailto:mayuri.avr@vitbhopal.ac.in",
         label: "Email",
         value: "mayuri.avr@vitbhopal.ac.in",
-      },
-      {
-        icon: <GraduationCap size={20} />,
-        href: "#",
-        label: "Role",
-        value: "Faculty Coordinator",
       },
     ],
   },
