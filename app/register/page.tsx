@@ -63,10 +63,10 @@ export default function Register() {
           </h2>
           <div className="space-y-4">
             {[
-              "Last Day to Join the Madness: Feb 21st, 2025 (or when pigs fly, whichever comes first)",
-              "D-Day: Feb 22nd, 2025 (mark your calendar with a crayon)",
-              "Who Can Join: Any college student brave enough to question reality",
-              "What to Bring: Your laptop, your weirdest ideas, and your sense of humor (required)",
+              "A team can have a maximum of 4 members.",
+              "Participants must create projects inspired by memes/current internet trends.",
+              "Use of offensive or inappropriate content is strictly prohibited.",
+              "Last day to participate: Feb 21st, 2025",
             ].map((item, i) => (
               <div
                 key={i}

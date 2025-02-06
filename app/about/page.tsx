@@ -13,36 +13,39 @@ export default function About() {
             <h1 className="comic-text text-5xl mb-6 text-white">
               What's This Madness About? 🎭
             </h1>
-            <p className="text-lg font-comic">
-              Hawkathoon'25 is a unique event that blends creativity
-              and humor that will encourage participants to create absurd yet
-              entertaining projects inspired by current memes and internet trends.
-
-              It challenges participants to break free from conventional thinking
-              and showcase their imagination in the most hilarious and out-of-the-box
-              ways possible.
-
-              Projects will be judged based on their level of absurdity, creativity,
-              and entertainment value.
-            </p>
-
-            <h2 className="mt-4 text-xl font-comic">Objective</h2>
-            <ul className="list-disc pl-6">
-              <li>To encourage participants to embrace creativity and humor.</li>
-              <li>Showcase absurd yet entertaining projects inspired by memes.</li>
-            </ul>
-
-            <h2 className="mt-4 text-xl font-comic">Resources & Materials 📦</h2>
-            <ul className="list-disc pl-6 text-lg font-comic">
-              <li>Participants are encouraged to bring their own laptops and materials.</li>
-              <li>Basic stationery and internet access will be provided.</li>
-            </ul>
-
-            <h2 className="mt-4 text-xl font-comic">Awards & Prizes 🎖️</h2>
-            <ul className="list-disc pl-6 text-lg font-comic">
-              <li><strong>Top 3 Performers:</strong> Certificate of Appreciation and Selection for Omdena’s 5th international project.</li>
-              <li><strong>Participants:</strong> Certificate of Participation for all the teams.</li>
-            </ul>
+            <div className="my-4">
+              <p className="text-lg font-comic">
+                Hawkathoon'25 is a unique event that blends creativity
+                and humor that will encourage participants to create absurd yet
+                entertaining projects inspired by current memes and internet trends.
+                <br />
+                Participants will showcase their projects which will be
+                judged based on their level of absurdity, creativity and entertainment
+                value.
+              </p>
+            </div>
+            <hr />
+            <div className="my-4">
+              <h2 className="my-2 text-xl font-comic">Objective</h2>
+              <ul className="list-disc pl-6 text-lg font-comic">
+                <li>Develop and showcase your idea in front of the judges.</li>
+                <li>Showcase absurd yet entertaining projects inspired by memes.</li>
+              </ul>
+            </div>
+            <div className="my-4">
+              <h2 className="my-2 text-xl font-comic">Resources & Materials 📦</h2>
+              <ul className="list-disc pl-6 text-lg font-comic">
+                <li>Participants are encouraged to bring their own laptops and materials.</li>
+                <li>Basic stationery and internet access will be provided.</li>
+              </ul>
+            </div>
+            <div className="my-4">
+              <h2 className="text-xl font-comic">Awards & Prizes 🎖️</h2>
+              <ul className="list-disc pl-6 text-lg font-comic">
+                <li><strong>Top 3 Performers:</strong> Certificate of Appreciation and Selection for Omdena’s 5th international project.</li>
+                <li><strong>Participants:</strong> Certificate of Participation for all the teams.</li>
+              </ul>
+            </div>
 
           </div>
           <div className="neo-brutal-card p-4 bg-pink-400 transform ">
