@@ -107,7 +107,7 @@ export default function Contact() {
         {/* Hero Section */}
         <div className="neo-brutal-card p-8 bg-cyan-300 mb-8 text-center relative overflow-hidden">
           <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
-          <h1 className="comic-text text-5xl mb-6 text-white">Contact Us</h1>
+          <h1 className="comic-text text-5xl text-white">Contact Us</h1>
           <p className="text-xl font-comic">
             {/* Reach out to the event organizers for any queries (or just to say hi)! */}
           </p>

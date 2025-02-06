@@ -207,4 +207,14 @@
     .comic-text-2 {
         @apply font-bangers text-4xl leading-tight;
     }
+
+    @font-face {
+        font-family: metropolisFont;
+        src: url(../public/assets/fonts/Metropolis-Bold.otf) format("opentype");
+    }
+
+    .metropolis-text {
+        font-family: metropolisFont !important;
+        /* @apply font-metropolis text-4xl leading-tight; */
+    }
 }

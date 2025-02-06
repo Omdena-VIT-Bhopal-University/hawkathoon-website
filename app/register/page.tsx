@@ -4,7 +4,7 @@ const registrationLinks = [
   {
     href: "https://forms.gle/SbnGYzpEFyGXrVVC7",
     label: "Click if you're ready to embrace chaos",
-    handle: "VIT Students 🔗",
+    handle: "VITB Students 🔗",
   },
   {
     href: "https://forms.gle/jvTTsyrwFgxRahHm9",
@@ -24,13 +24,20 @@ export default function Register() {
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
         <div className="neo-brutal-card p-8 bg-cyan-300 mb-8 text-center relative overflow-hidden">
-          <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
-          <h1 className="comic-text text-5xl text-white">
-            Sign Your Sanity Away! 🎭
-          </h1>
-          {/* <p className="text-sm comic-text-2">
-            We promise you, you won't regret this.
-          </p> */}
+          <div className="comic-crosshatch absolute inset-0 opacity-10 z-10"></div>
+          <h1 className="comic-text text-5xl text-white mb-4">Register Now! 🎭</h1>
+          <p className="text-sm font-comic">
+            Kindly read{' '}
+            <a
+              href="https://www.youtube.com/watch?v=WLwldp2KzMI"
+              target="_blank"
+              className="text-pink-500 hover:text-pink-600 underline relative z-50"
+            >
+              terms and conditions
+            </a>
+            {' '}
+            before registering.
+          </p>
         </div>
 
         {/* Registration Cards */}
@@ -60,7 +67,7 @@ export default function Register() {
               "D-Day: Feb 22nd, 2025 (mark your calendar with a crayon)",
               "Who Can Join: Any college student brave enough to question reality",
               "What to Bring: Your laptop, your weirdest ideas, and your sense of humor (required)",
-            ].map((item, i) => ( 
+            ].map((item, i) => (
               <div
                 key={i}
                 className="neo-brutal-card bg-white px-4 py-2 transform"

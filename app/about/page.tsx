@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+
 
 export default function About() {
   return (
@@ -6,20 +8,44 @@ export default function About() {
       <section className="max-w-7xl mx-auto mt-8">
         {/* Hero Section */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8 ">
-          <div className="neo-brutal-card p-8 bg-cyan-300 relative overflow-hidden -rotate-1">
+          <div className="neo-brutal-card p-8 bg-cyan-300 relative overflow-hidden ">
             <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
             <h1 className="comic-text text-5xl mb-6 text-white">
               What's This Madness About? 🎭
             </h1>
-            <p className="text-lg font-comic rotate-1">
-              Welcome to Hawkathoon'25, where we've thrown sanity out the
-              window! This isn't your typical boring hackathon - it's a 1.5-hour
-              festival of absurdity where we celebrate the most ridiculous,
-              outrageous, and entertainingly useless solutions to problems that
-              probably don't exist!
+            <p className="text-lg font-comic">
+              Hawkathoon'25 is a unique event that blends creativity
+              and humor that will encourage participants to create absurd yet
+              entertaining projects inspired by current memes and internet trends.
+
+              It challenges participants to break free from conventional thinking
+              and showcase their imagination in the most hilarious and out-of-the-box
+              ways possible.
+
+              Projects will be judged based on their level of absurdity, creativity,
+              and entertainment value.
             </p>
+
+            <h2 className="mt-4 text-xl font-comic">Objective</h2>
+            <ul className="list-disc pl-6">
+              <li>To encourage participants to embrace creativity and humor.</li>
+              <li>Showcase absurd yet entertaining projects inspired by memes.</li>
+            </ul>
+
+            <h2 className="mt-4 text-xl font-comic">Resources & Materials 📦</h2>
+            <ul className="list-disc pl-6 text-lg font-comic">
+              <li>Participants are encouraged to bring their own laptops and materials.</li>
+              <li>Basic stationery and internet access will be provided.</li>
+            </ul>
+
+            <h2 className="mt-4 text-xl font-comic">Awards & Prizes 🎖️</h2>
+            <ul className="list-disc pl-6 text-lg font-comic">
+              <li><strong>Top 3 Performers:</strong> Certificate of Appreciation and Selection for Omdena’s 5th international project.</li>
+              <li><strong>Participants:</strong> Certificate of Participation for all the teams.</li>
+            </ul>
+
           </div>
-          <div className="neo-brutal-card p-4 bg-pink-400 transform -rotate-1">
+          <div className="neo-brutal-card p-4 bg-pink-400 transform ">
             <Image
               src="/assets/images/poster.png"
               alt="Hawkathoon Poster"
@@ -32,21 +58,20 @@ export default function About() {
 
         {/* Event Details */}
         <div className="grid gap-8 lg:grid-cols-2 mb-8">
-          <div className="neo-brutal-card p-8 bg-purple-400 relative overflow-hidden -rotate-1">
+          <div className="neo-brutal-card p-8 bg-purple-400 relative overflow-hidden ">
             <div className="comic-lines absolute inset-0 opacity-20"></div>
             <h2 className="comic-text text-4xl mb-6 text-white">
               The Not-So-Fine Print 📜
             </h2>
             <div className="space-y-4">
               {[
-                "1.5 hours of pure chaos starting Feb 22, 2025 (yes, we're planning chaos in advance)",
-                "Open to all college students (the more chaotic minds, the merrier!)",
-                "Prizes for the most absurd, yet somehow functional creations",
-                "Warning: Side effects may include uncontrollable laughter and questioning reality",
+                "1.5 hours of pure chaos on Feb 22, 2025",
+                "Open to all college students",
+                "Certificates for all the teams",
               ].map((detail, i) => (
                 <div
                   key={i}
-                  className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+                  className="neo-brutal-card bg-white px-4 py-2 transform"
                 >
                   <p className="font-comic text-lg">{detail}</p>
                 </div>
@@ -54,21 +79,20 @@ export default function About() {
             </div>
           </div>
 
-          <div className="neo-brutal-card p-8 bg-green-400 relative overflow-hidden -rotate-1">
+          <div className="neo-brutal-card p-8 bg-green-400 relative overflow-hidden ">
             <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
             <h2 className="comic-text text-4xl mb-6 text-white">
-              Why Would Anyone Do This? 🤔
+              Judging Criteria 🏆
             </h2>
             <div className="space-y-4">
               {[
-                "Because normal hackathons are SO 2024  💅",
-                "To prove that your weirdest ideas deserve a spotlight",
-                "Free pizza (okay, this one's not actually serious at all)",
-                "Create something so bizarre it might just revolutionize... absolutely nothing",
+                "Level of Absurdity: How absurd and meme-worthy the idea is.",
+                "Creativity: Originality and uniqueness of the project.",
+                "Entertainment Value: How amusing and engaging the project is."
               ].map((reason, i) => (
                 <div
                   key={i}
-                  className="neo-brutal-card bg-white px-4 py-2 transform rotate-1"
+                  className="neo-brutal-card bg-white px-4 py-2 transform"
                 >
                   <p className="font-comic text-lg">{reason}</p>
                 </div>
@@ -78,18 +102,26 @@ export default function About() {
         </div>
 
         {/* About Organizers */}
-        <div className="neo-brutal-card p-8 bg-yellow-400 mb-8 relative overflow-hidden -rotate-1">
+        <div className="neo-brutal-card p-8 bg-yellow-400 mb-8 relative overflow-hidden ">
           <div className="comic-dots absolute inset-0 opacity-20"></div>
           <h2 className="comic-text text-5xl mb-6 text-center text-white">
             The Masterminds Behind The Madness 🎪
           </h2>
-          <p className="text-xl text-center max-w-3xl mx-auto font-comic rotate-1">
-            We're the Omdena VIT Bhopal Chapter, a bunch of supposedly serious tech
-            enthusiasts who decided that the world needs more laughter than
-            another todo list app. We've temporarily lost our minds and decided
-            to organize this beautiful chaos. Join us in our mission to make
-            technology fun again! (No refunds on sanity lost during the event)
+          <p className="text-xl text-center max-w-3xl mx-auto font-comic">
+            The VIT Bhopal Chapter is an initiative of Omdena, a global community that connects data scientists,
+            engineers and other experts to work on projects that drive social impact.
+            The Local Chapter is a platform where individuals can collaborate, share ideas,
+            and work on projects that make a real difference in their local community.
           </p>
+          <div className="flex justify-center items-center h-full">
+            <Link
+              href="https://www.omdena.com/local-chapters/vit-bhopal-university"
+              target="_blank"
+              className="neo-brutal-button inline-block text-sm bg-white transform px-14 mt-8 hover:scale-105"
+            >
+              Learn more
+            </Link>
+          </div>
         </div>
       </section>
     </main>

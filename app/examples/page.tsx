@@ -17,12 +17,12 @@ interface ProjectCardProps {
 }
 
 const data: ProjectData[] = [
-  {
-    title: "Schizophrenia Detector",
-    desc: "A simple app to detect Schizophrenia",
-    link: "https://github.com/arpy8/Are_you_Schizophrenic",
-    image: "/assets/images/fight-club.jpg",
-  },
+  // {
+  //   title: "Schizophrenia Detector",
+  //   desc: "A simple app to detect Schizophrenia",
+  //   link: "https://github.com/arpy8/Are_you_Schizophrenic",
+  //   image: "/assets/images/fight-club.jpg",
+  // },
   // {
   //   title: "BSOD",
   //   desc: "A python package to simulate BSOD",
@@ -32,12 +32,12 @@ const data: ProjectData[] = [
   {
     title: "Bhandaro ki Soochna",
     desc: "Mobile app to assist users in locating nearest bhandara.",
-    link: "https://github.com/arpy8/Are_you_Schizophrenic",
+    link: "https://github.com/sunilband/Bhandara",
     image: "/assets/images/me-when-bhandara.jpg",
   },
   {
     title: "Gaydar",
-    desc: "A research project done by stanford scholars to detect gay people.",
+    desc: "A research project done by stanford scholars.",
     link: "https://psycnet.apa.org/record/2018-03783-002",
     image: "/assets/images/gaydar.png",
   }
@@ -75,12 +75,9 @@ export default function ExamplePage() {
       <section className="max-w-7xl mx-auto mt-8">
         <div className="neo-brutal-card p-8 bg-pink-400 mb-8 text-center relative overflow-hidden">
           <div className="comic-crosshatch absolute inset-0 opacity-10"></div>
-          <h1 className="comic-text text-5xl mb-6 text-white">
+          <h1 className="comic-text text-5xl text-white">
             Example Projects
           </h1>
-          <p className="text-xl font-comic">
-            Check these out to get an idea of what we're expecting!
-          </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.map((item, index) => (
