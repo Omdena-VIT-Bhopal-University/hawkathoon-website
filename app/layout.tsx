@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import NavBar from "./components/nav-bar";
 
 export const metadata: Metadata = {
-  title: "Omdena Hawk-a-Thoon'25",
-  description: "Omdena Local Chapter event website",
+  title: "Hawkathoon'25",
+  description: "Omdena VIT Bhopal Chapter's event website",
   icons: {
     shortcut: "/favicon.png",
   },
