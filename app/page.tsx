@@ -115,18 +115,18 @@ export default function Home() {
           <h2 className="comic-text mb-6 text-white">
             So would you participate?
           </h2>
-          <div className="space-x-16">
+          <div className="space-y-4">
             <Link
               href="/register"
-              className="neo-brutal-button inline-block text-2xl bg-[#fe9308] transform px-20"
+              className="neo-brutal-button inline-block text-2xl bg-[#fe9308] transform px-20 mx-4"
             >
               Hell Yeah ‼
             </Link>
             <Link
               href="/about"
-              className="neo-brutal-button inline-block text-2xl bg-cyan-300 transform"
+              className="neo-brutal-button inline-block text-2xl bg-[#fe9308] transform bg-cyan-300 transform px-8 mx-4"
             >
-              I wanna know more 🤔
+              I wanna know more
             </Link>
           </div>
         </div>
