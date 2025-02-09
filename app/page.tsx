@@ -57,8 +57,8 @@ export default function Home() {
             href="/register"
             className="neo-brutal-button inline-block text-2xl transform mb-4"
           >
-            <span className="comic-text-2 px-10 text-3xl">Register Now !</span>
-          </Link>F
+            <span className="comic-text-2 px-8 text-3xl">Register Now</span>
+          </Link>
         </div>
 
         {/* Info Cards */}
